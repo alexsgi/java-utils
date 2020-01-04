@@ -14,11 +14,11 @@ public class FutureTaskExecutor {
     /**
      * @param runnable runnable to execute after delay
      * @param delay    time to wait
-     * @param isDaemon false: main stops timer (if necessary); true: timer finishes properly (as well if main already finished)
+     * @param isTerminable false: main stops timer (if necessary); true: timer finishes properly (as well if main already finished)
      */
-    public static void runDelayed(Runnable runnable, int delay, boolean isDaemon) {
+    public static void runDelayed(Runnable runnable, int delay, boolean isTerminable) {
         if (runnable == null) return;
-        Timer timer = new Timer(isDaemon);
+        Timer timer = new Timer(isTerminable);
         timer.schedule(new FutureTaskExecutor.FutureTask(timer, runnable), delay);
     }
 
