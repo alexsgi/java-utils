@@ -6,7 +6,7 @@
 
 <br/>
 
-Gradle:
+**Gradle:**
 ```gradle
 allprojects {
 	repositories {
@@ -19,7 +19,7 @@ dependencies {
 	implementation 'com.github.alexsgi:JavaUtils:1.0'
 }
 ```
-Maven:
+**Maven:**
 ```maven
 <repositories>
 	<repository>
