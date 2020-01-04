@@ -73,3 +73,5 @@ double product = AdvMath.product(double... numbers);
 double product = AdvMath.product(5,5,4,1,9);
 ```
 → product = 900
+
+---
