@@ -59,6 +59,8 @@ FutureTaskExecutor.runDelayed(Runnable runnable, int delayInMilliSeconds, boolea
 ```
 ```isTerminable``` : (default: **false**) if set to false, the timer will stop properly on finish of the runnable, otherwise (if set to **true**) the timer can be interrupted (e.g. by the main method).
 
+---
+
 ###  Mathematical functions :
 ```java
 double sum = AdvMath.sum(double... numbers);
