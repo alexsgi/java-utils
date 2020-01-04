@@ -4,6 +4,8 @@
 
 [![](https://jitpack.io/v/alexsgi/JavaUtils.svg)](https://jitpack.io/#alexsgi/JavaUtils) [![](https://jitci.com/gh/alexsgi/JavaUtils/svg)](https://jitci.com/gh/alexsgi/JavaUtils)
 
+<br/>
+
 Gradle:
 ```gradle
 allprojects {
@@ -35,7 +37,6 @@ Maven:
 	</dependency>
 </dependencies>
 ```
-
 ## 2. Usage
 
  ###  Time-oriented functions :
