@@ -1,10 +1,8 @@
 # JavaUtils
 
-## 1. Import
-
 [![](https://jitpack.io/v/alexsgi/JavaUtils.svg)](https://jitpack.io/#alexsgi/JavaUtils) [![](https://jitci.com/gh/alexsgi/JavaUtils/svg)](https://jitci.com/gh/alexsgi/JavaUtils)
 
-<br/>
+## 1. Import
 
 **Gradle:**
 ```gradle
@@ -37,6 +35,8 @@ dependencies {
 	</dependency>
 </dependencies>
 ```
+(Instead of "1.0" you can insert every available version → check under "releases").
+
 ## 2. Usage
 
  ###  Time-oriented functions :
