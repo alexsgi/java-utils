@@ -5,64 +5,64 @@ import java.math.RoundingMode;
 
 public class AdvMath {
 
-    public static double sum(double... numbers) {
+    public static double sum(double... summands) {
         double sum = 0;
-        for (double number : numbers) {
-            sum += number;
+        for (double summand : summands) {
+            sum += summand;
         }
         return sum;
     }
 
-    public static double difference(double value, double... numbers) {
-        for (double number : numbers) {
-            value -= number;
+    public static double difference(double minuend, double... subtrahends) {
+        for (double subtrahend : subtrahends) {
+            minuend -= subtrahend;
         }
-        return value;
+        return minuend;
     }
 
-    public static double product(double... numbers) {
+    public static double product(double... factors) {
         int product = 1;
-        for (double number : numbers) {
-            product *= number;
+        for (double factor : factors) {
+            product *= factor;
         }
         return product;
     }
 
-    public static double quotient(double value, double... numbers) {
-        for (double number : numbers) {
-            value /= number;
+    public static double quotient(double dividend, double... divisors) {
+        for (double divisor : divisors) {
+            dividend /= divisor;
         }
-        return value;
+        return dividend;
     }
 
-    public static BigDecimal bigSum(BigDecimal... numbers) {
+    public static BigDecimal bigSum(BigDecimal... summands) {
         BigDecimal sum = new BigDecimal(0);
-        for (BigDecimal number : numbers) {
-            sum = sum.add(number);
+        for (BigDecimal summand : summands) {
+            sum = sum.add(summand);
         }
         return sum;
     }
 
-    public static BigDecimal bigDifference(BigDecimal value, BigDecimal... numbers) {
-        for (BigDecimal number : numbers) {
-            value = value.subtract(number);
+    public static BigDecimal bigDifference(BigDecimal minuend, BigDecimal... subtrahents) {
+        for (BigDecimal subtrahent : subtrahents) {
+            minuend = minuend.subtract(subtrahent);
         }
-        return value;
+        return minuend;
     }
 
-    public static BigDecimal bigProduct(BigDecimal... numbers) {
+    public static BigDecimal bigProduct(BigDecimal... factors) {
         BigDecimal product = new BigDecimal(1);
-        for (BigDecimal number : numbers) {
-            product = product.multiply(number);
+        for (BigDecimal factor : factors) {
+            product = product.multiply(factor);
         }
         return product;
     }
 
-    public static BigDecimal bigQuotient(BigDecimal value, BigDecimal... numbers) {
-        for (BigDecimal number : numbers) {
-            value = value.divide(number, RoundingMode.HALF_UP);
+    public static BigDecimal bigQuotient(BigDecimal dividend, BigDecimal... divisors) {
+        for (BigDecimal divisor : divisors) {
+            dividend = dividend.divide(divisor, RoundingMode.HALF_UP);
         }
-        return value;
+        return dividend;
     }
 
 }
