@@ -1,3 +1,4 @@
+
 # JavaUtils
 
 [![](https://jitpack.io/v/alexsgi/JavaUtils.svg)](https://jitpack.io/#alexsgi/JavaUtils) [![](https://jitci.com/gh/alexsgi/JavaUtils/svg)](https://jitci.com/gh/alexsgi/JavaUtils)
@@ -62,19 +63,18 @@ FutureTaskExecutor.runDelayed(Runnable runnable, int delayInMilliSeconds, boolea
 ---
 
 ###  Mathematical functions :
+Standard:
 ```java
-double sum = AdvMath.sum(double... numbers);
+double sum(double... summands);
+double difference(double minuend, double... subtrahents);
+double product(double... factors);
+double quotient(double dividend, double... divisors);
 ```
+Advanced:
 ```java
-double sum = AdvMath.sum(5,5,4,1,9);
+BigDecimal bigSum(BigDecimal... summands);
+BigDecimal bigDifference(BigDecimal minuend, BigDecimal... subtrahents);
+BigDecimal bigProduct(BigDecimal... factors);
+BigDecimal bigQuotient(BigDecimal dividend, BigDecimal... divisors);
 ```
-→ sum = 24
-```java
-double product = AdvMath.product(double... numbers);
-```
-```java
-double product = AdvMath.product(5,5,4,1,9);
-```
-→ product = 900
-
 ---
