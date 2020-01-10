@@ -16,7 +16,7 @@ public class Cryptography {
         return Base64.getEncoder().encodeToString(input.getBytes());
     }
 
-    private static String hashSHA(String input) {
+    private static String hashSHA2(String input) {
         try {
             MessageDigest digest = MessageDigest.getInstance(SHA_256);
             byte[] encodedhash = digest.digest(input.getBytes(StandardCharsets.UTF_8));
@@ -39,7 +39,7 @@ public class Cryptography {
     }
 
     public static String hash(String input) {
-        return hashSHA3(hashSHA(base64Encryption(hashSHA3(hashSHA(base64Encryption(input))))));
+        return hashSHA3(hashSHA2(base64Encryption(hashSHA3(hashSHA2(base64Encryption(input))))));
     }
 
     private static String bytesToHex(byte[] hash) {
