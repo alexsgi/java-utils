@@ -107,3 +107,4 @@ Reset the hash length (default: 512) :
 ```java
 Cryptography.resetHashLength();
 ```
+---
