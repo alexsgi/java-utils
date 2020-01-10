@@ -1,4 +1,5 @@
 
+
 # JavaUtils
 
 [![](https://jitpack.io/v/alexsgi/JavaUtils.svg)](https://jitpack.io/#alexsgi/JavaUtils) [![](https://jitci.com/gh/alexsgi/JavaUtils/svg)](https://jitci.com/gh/alexsgi/JavaUtils)
@@ -78,3 +79,31 @@ BigDecimal bigProduct(BigDecimal... factors);
 BigDecimal bigQuotient(BigDecimal dividend, BigDecimal... divisors);
 ```
 ---
+### Cryptography :
+SHA2-512:
+```java
+String sha2_512Hashed = Cryptography.hashSHA2("Please hash me !");
+```
+SHA3-512:
+```java
+String sha3_512Hashed = Cryptography.hashSHA3("Please hash me, too !");
+```
+Base64-Encoding:
+```java
+String base64Encoded = Cryptography.base64Encryption("Please hash me, too ! Nice.");
+```
+Change the hash length (default: 512) :
+```java
+Cryptography.setHashLength(int hashLength);
+```
+```java
+Cryptography.setHashLength(256);
+```
+Get the hash length :
+```java
+int hashLength = Cryptography.getHashLength();
+```
+Reset the hash length (default: 512) :
+```java
+Cryptography.resetHashLength();
+```
