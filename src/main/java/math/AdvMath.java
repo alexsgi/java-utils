@@ -16,6 +16,7 @@ public class AdvMath {
     private static double eps = 0.001;
     private static double delX = 2147483647;
     private static double xK = 0.0;
+
     private AdvMath() {
     }
 
