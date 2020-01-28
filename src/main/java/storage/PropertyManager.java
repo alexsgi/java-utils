@@ -3,6 +3,11 @@ package storage;
 import java.io.*;
 import java.util.Properties;
 
+/**
+ * @author Alexander Sagorski
+ * @version 1.0
+ * @since 1.0
+ */
 public final class PropertyManager {
 
     private PropertyManager() {

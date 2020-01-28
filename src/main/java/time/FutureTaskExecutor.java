@@ -3,6 +3,11 @@ package time;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * @author Alexander Sagorski
+ * @version 1.0
+ * @since 1.0
+ */
 public class FutureTaskExecutor {
 
     public static void runDelayed(Runnable runnable, int delay) {
@@ -12,8 +17,8 @@ public class FutureTaskExecutor {
     }
 
     /**
-     * @param runnable runnable to execute after delay
-     * @param delay    time to wait
+     * @param runnable     runnable to execute after delay
+     * @param delay        time to wait
      * @param isTerminable false: main stops timer (if necessary); true: timer finishes properly (as well if main already finished)
      */
     public static void runDelayed(Runnable runnable, int delay, boolean isTerminable) {
