@@ -108,3 +108,13 @@ Reset the hash length (default: 512) :
 Cryptography.resetHashLength();
 ```
 ---
+
+### Properties :
+Load properties from file :
+```java
+Properties properties = PropertyManager.loadFromFile(new File("config.properties");
+```
+Store properties object in file :
+```java
+PropertyManager.storeInFile(properties, new File("newConfig.properties"));
+```
