@@ -5,6 +5,17 @@ import java.math.RoundingMode;
 
 public class AdvMath {
 
+    private AdvMath() {
+    }
+
+    public static final double E = Math.E;
+    public static final double PI = Math.PI;
+
+    private static double xPre = Math.random() % 10;
+    private static double eps = 0.001;
+    private static double delX = 2147483647;
+    private static double xK = 0.0;
+
     public static double sum(double... summands) {
         double sum = 0;
         for (double summand : summands) {
@@ -63,6 +74,74 @@ public class AdvMath {
             dividend = dividend.divide(divisor, RoundingMode.HALF_UP);
         }
         return dividend;
+    }
+
+    public static double sin(double a) {
+        return Math.sin(a);
+    }
+
+    public static double cos(double a) {
+        return Math.cos(a);
+    }
+
+    public static double tan(double a) {
+        return Math.tan(a);
+    }
+
+    public static double asin(double a) {
+        return Math.asin(a);
+    }
+
+    public static double acos(double a) {
+        return Math.acos(a);
+    }
+
+    public static double atan(double a) {
+        return Math.atan(a);
+    }
+
+    public static double exp(double a) {
+        return Math.exp(a);
+    }
+
+    public static double log(double a) {
+        return Math.log(a);
+    }
+
+    public static double log10(double a) {
+        return Math.log10(a);
+    }
+
+    public static double sqrt(double a) {
+        return Math.sqrt(a);
+    }
+
+    public static double cbrt(double a) {
+        return Math.cbrt(a);
+    }
+
+    public static double pow(double a, double b) {
+        return Math.pow(a, b);
+    }
+
+    public static double nthRoot(int radikand, int root) {
+        while (delX > eps) {
+            xK = ((root - 1.0) * xPre +
+                    (double) radikand / Math.pow(xPre, root - 1)) / (double) root;
+            delX = Math.abs(xK - xPre);
+            xPre = xK;
+        }
+        return Math.round(xK * 1000) / 1000;
+    }
+
+    public static double nthRootNonRounded(int radikand, int root) {
+        while (delX > eps) {
+            xK = ((root - 1.0) * xPre +
+                    (double) radikand / Math.pow(xPre, root - 1)) / (double) root;
+            delX = Math.abs(xK - xPre);
+            xPre = xK;
+        }
+        return xK;
     }
 
 }
