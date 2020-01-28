@@ -70,14 +70,14 @@ double sum(double... summands);
 double difference(double minuend, double... subtrahents);
 double product(double... factors);
 double quotient(double dividend, double... divisors);
-```
-Advanced:
-```java
+
 BigDecimal bigSum(BigDecimal... summands);
 BigDecimal bigDifference(BigDecimal minuend, BigDecimal... subtrahents);
 BigDecimal bigProduct(BigDecimal... factors);
 BigDecimal bigQuotient(BigDecimal dividend, BigDecimal... divisors);
 ```
+There are many other functions - just try it out !
+
 ---
 ### Cryptography :
 SHA2-512:
