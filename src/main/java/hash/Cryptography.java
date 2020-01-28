@@ -12,16 +12,16 @@ import java.util.Base64;
  */
 public class Cryptography {
 
+    private static final String zero = "";
     private static int HASH_LENGTH = 512;
     private static String SHA3_256 = "SHA3-" + HASH_LENGTH;
     private static String SHA_256 = "SHA-" + HASH_LENGTH;
-    private static final String zero = "";
 
-    private static String base64Encryption(String input) {
+    public static String base64Encryption(String input) {
         return Base64.getEncoder().encodeToString(input.getBytes());
     }
 
-    private static String hashSHA2(String input) {
+    public static String hashSHA2(String input) {
         try {
             MessageDigest digest = MessageDigest.getInstance(SHA_256);
             byte[] encodedhash = digest.digest(input.getBytes(StandardCharsets.UTF_8));
@@ -32,7 +32,7 @@ public class Cryptography {
         return zero;
     }
 
-    private static String hashSHA3(String input) {
+    public static String hashSHA3(String input) {
         try {
             MessageDigest digest = MessageDigest.getInstance(SHA3_256);
             byte[] encodedhash = digest.digest(input.getBytes(StandardCharsets.UTF_8));
@@ -57,17 +57,17 @@ public class Cryptography {
         return hexString.toString();
     }
 
-    public void setHashLength(int hashLength) {
+    public static int getHashLength() {
+        return HASH_LENGTH;
+    }
+
+    public static void setHashLength(int hashLength) {
         HASH_LENGTH = hashLength;
         SHA3_256 = "SHA3-" + HASH_LENGTH;
         SHA_256 = "SHA-" + HASH_LENGTH;
     }
 
-    public int getHashLength() {
-        return HASH_LENGTH;
-    }
-
-    public void resetHashLength() {
+    public static void resetHashLength() {
         HASH_LENGTH = 512;
         SHA3_256 = "SHA3-" + HASH_LENGTH;
         SHA_256 = "SHA-" + HASH_LENGTH;

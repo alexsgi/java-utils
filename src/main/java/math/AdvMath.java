@@ -10,16 +10,14 @@ import java.math.RoundingMode;
  */
 public class AdvMath {
 
-    private AdvMath() {
-    }
-
     public static final double E = Math.E;
     public static final double PI = Math.PI;
-
     private static double xPre = Math.random() % 10;
     private static double eps = 0.001;
     private static double delX = 2147483647;
     private static double xK = 0.0;
+    private AdvMath() {
+    }
 
     public static double sum(double... summands) {
         double sum = 0;
