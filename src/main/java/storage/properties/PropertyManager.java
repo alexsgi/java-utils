@@ -1,4 +1,4 @@
-package storage;
+package storage.properties;
 
 import java.io.*;
 import java.util.Properties;
