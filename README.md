@@ -16,7 +16,7 @@ allprojects {
 ```
 ```gradle
 dependencies {
-	implementation 'com.github.alexsgi:java-utils:1.0'
+	implementation 'com.github.alexsgi:java-utils:0.1'
 }
 ```
 **Maven:**
@@ -33,11 +33,11 @@ dependencies {
 	<dependency>
 	    <groupId>com.github.alexsgi</groupId>
 	    <artifactId>java-utils</artifactId>
-	    <version>1.0</version>
+	    <version>0.1</version>
 	</dependency>
 </dependencies>
 ```
-(Instead of "1.0" you can insert every available version → check under "releases").
+(Instead of "0.1" you can insert every available version → check under "releases").
 
 ## 2. Usage
 
