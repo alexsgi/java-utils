@@ -41,7 +41,7 @@ dependencies {
 
 ## 2. Usage
 
- ###  Time-oriented functions :
+###  Time-oriented functions :
  
  Run something delayed:
  ```java
@@ -117,4 +117,15 @@ Properties properties = PropertyManager.loadFromFile(new File("config.properties
 Store properties object in file :
 ```java
 PropertyManager.storeInFile(properties, new File("newConfig.properties"));
+```
+
+### System :
+Get all drives :
+```java
+Drive[] drives = SystemInfo.getAllDrives();
+for(Drive drive : drives) {
+	System.out.println(drive.getDriveName());
+        System.out.println(drive.getDriveLetter());
+        System.out.println(drive.getDriveDescription());
+}
 ```
