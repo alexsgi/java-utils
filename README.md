@@ -118,6 +118,7 @@ Store properties object in file :
 ```java
 PropertyManager.storeInFile(properties, new File("newConfig.properties"));
 ```
+---
 
 ### System :
 Get all drives :
