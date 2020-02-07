@@ -1,5 +1,9 @@
 package system;
 
+/**
+ * @author Alexander Sagorski
+ * @since 2.0
+ */
 public class Drive {
 
     private String driveName, driveLetter, driveDescription;

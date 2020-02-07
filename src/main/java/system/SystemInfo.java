@@ -3,6 +3,10 @@ package system;
 import javax.swing.filechooser.FileSystemView;
 import java.io.File;
 
+/**
+ * @author Alexander Sagorski
+ * @since 2.0
+ */
 public class SystemInfo {
 
     public static Drive[] getAllDrives() {

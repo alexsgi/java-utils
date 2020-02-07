@@ -5,7 +5,6 @@ import java.math.RoundingMode;
 
 /**
  * @author Alexander Sagorski
- * @version 1.0
  * @since 1.0
  */
 public class AdvMath {
