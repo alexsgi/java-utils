@@ -125,7 +125,7 @@ Get all drives :
 ```java
 Drive[] drives = SystemInfo.getAllDrives();
 for(Drive drive : drives) {
-	System.out.println(drive.getDriveName());
+    System.out.println(drive.getDriveName());
     System.out.println(drive.getDriveLetter());
     System.out.println(drive.getDriveDescription());
 }
