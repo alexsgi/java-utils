@@ -1,5 +1,4 @@
 
-
 # JavaUtils
 
 [![](https://jitpack.io/v/alexsgi/java-utils.svg)](https://jitpack.io/#alexsgi/java-utils)
@@ -16,7 +15,7 @@ allprojects {
 ```
 ```gradle
 dependencies {
-	implementation 'com.github.alexsgi:java-utils:2.0'
+	implementation 'com.github.alexsgi:java-utils:2.1'
 }
 ```
 **Maven:**
@@ -33,7 +32,7 @@ dependencies {
 	<dependency>
 	    <groupId>com.github.alexsgi</groupId>
 	    <artifactId>java-utils</artifactId>
-	    <version>2.0</version>
+	    <version>2.1</version>
 	</dependency>
 </dependencies>
 ```
@@ -65,15 +64,17 @@ FutureTaskExecutor.runDelayed(Runnable runnable, int delayInMilliSeconds, boolea
 ###  Mathematical functions :
 Standard:
 ```java
-double sum(double... summands);
-double difference(double minuend, double... subtrahents);
-double product(double... factors);
-double quotient(double dividend, double... divisors);
+class AdvMath {
+	double sum(double... summands);
+	double difference(double minuend, double... subtrahents);
+	double product(double... factors);
+	double quotient(double dividend, double... divisors);
 
-BigDecimal bigSum(BigDecimal... summands);
-BigDecimal bigDifference(BigDecimal minuend, BigDecimal... subtrahents);
-BigDecimal bigProduct(BigDecimal... factors);
-BigDecimal bigQuotient(BigDecimal dividend, BigDecimal... divisors);
+	BigDecimal bigSum(BigDecimal... summands);
+	BigDecimal bigDifference(BigDecimal minuend, BigDecimal... subtrahents);
+	BigDecimal bigProduct(BigDecimal... factors);
+	BigDecimal bigQuotient(BigDecimal dividend, BigDecimal... divisors);
+}
 ```
 There are many other functions - just try it out !
 
@@ -124,8 +125,45 @@ Get all drives :
 ```java
 Drive[] drives = SystemInfo.getAllDrives();
 for(Drive drive : drives) {
-	System.out.println(drive.getDriveName());
-        System.out.println(drive.getDriveLetter());
-        System.out.println(drive.getDriveDescription());
+    System.out.println(drive.getDriveName());
+    System.out.println(drive.getDriveLetter());
+    System.out.println(drive.getDriveDescription());
 }
+```
+---
+
+### Color :
+Change the text color or even the background color via ANSI codes :
+```java
+String textFormatted = TextColor.formatColor(String input, String color);
+String backgroundFormatted = TextColor.formatBackground(String input, String backgroundColor);
+String bothFormated = TextColor.formatColors(String input, String color, String backgroundColor);
+```
+Following options are available :
+```java
+RESET
+
+BLACK
+RED
+GREEN
+YELLOW
+BLUE
+PURPLE
+CYAN
+WHITE
+
+BLACK_BACKGROUND
+RED_BACKGROUND
+GREEN_BACKGROUND
+YELLOW_BACKGROUND
+BLUE_BACKGROUND
+PURPLE_BACKGROUND
+CYAN_BACKGROUND
+WHITE_BACKGROUND
+```
+Example :
+```java
+TextColor.formatColor("Example", TextColor.CYAN);
+TextColor.formatBackground("Example", TextColor.CYAN_BACKGROUND);
+TextColor.formatColors("Example", TextColor.CYAN, TextColor.CYAN_BACKGROUND);
 ```
