@@ -64,17 +64,19 @@ FutureTaskExecutor.runDelayed(Runnable runnable, int delayInMilliSeconds, boolea
 ###  Mathematical functions :
 Standard:
 ```java
-class AdvMath {
-	double sum(double... summands);
-	double difference(double minuend, double... subtrahents);
-	double product(double... factors);
-	double quotient(double dividend, double... divisors);
+double sum(double... summands);
+double difference(double minuend, double... subtrahents);
+double product(double... factors);
+double quotient(double dividend, double... divisors);
 
-	BigDecimal bigSum(BigDecimal... summands);
-	BigDecimal bigDifference(BigDecimal minuend, BigDecimal... subtrahents);
-	BigDecimal bigProduct(BigDecimal... factors);
-	BigDecimal bigQuotient(BigDecimal dividend, BigDecimal... divisors);
-}
+BigDecimal bigSum(BigDecimal... summands);
+BigDecimal bigDifference(BigDecimal minuend, BigDecimal... subtrahents);
+BigDecimal bigProduct(BigDecimal... factors);
+BigDecimal bigQuotient(BigDecimal dividend, BigDecimal... divisors);
+```
+Example :
+```java
+int sum = AdvMath.sum(5,7,0,9,8,5,-7,0);
 ```
 There are many other functions - just try it out !
 
@@ -167,3 +169,32 @@ TextColor.formatColor("Example", TextColor.CYAN);
 TextColor.formatBackground("Example", TextColor.CYAN_BACKGROUND);
 TextColor.formatColors("Example", TextColor.CYAN, TextColor.CYAN_BACKGROUND);
 ```
+---
+
+### UI - Screenshot :
+Take a screenshot (PNG):
+```
+AdvImage.takeScreenshot(File nameOfTheScreenshot);
+```
+By the way : it returns a File object !
+```java
+File file = new File("C:\\Users\\Public\\Desktop\\screenshot.png");
+System.out.println(file.exists());
+file = AdvImage.takeScreenshot(file);
+System.out.println(file.exists());
+```
+Output :
+```java
+false
+true
+```
+You like JPEG ?
+```
+AdvImage.takeJPEGScreenshot(File nameOfTheScreenshot);
+```
+You want to take multiple screenshots ?
+```
+AdvImage.takeScrenshots(File path, int amount, int delay);
+AdvImage.takeScrenshots(File path, int amount, int delay, boolean inNewThread);
+```
+Important : the input file needs to be a directory !
