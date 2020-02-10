@@ -198,3 +198,9 @@ AdvImage.takeScrenshots(File path, int amount, int delay);
 AdvImage.takeScrenshots(File path, int amount, int delay, boolean inNewThread);
 ```
 Important : the input file needs to be a directory !
+---
+
+### Run something parallel :
+```java
+ParallelTask.runParallel(Runnable runnable, CommandCallback callback);
+```
