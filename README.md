@@ -15,7 +15,7 @@ allprojects {
 ```
 ```gradle
 dependencies {
-	implementation 'com.github.alexsgi:java-utils:<VERSION>'
+	implementation 'com.github.alexsgi:java-utils:VERSION'
 }
 ```
 **Maven:**
@@ -32,7 +32,7 @@ dependencies {
 	<dependency>
 	    <groupId>com.github.alexsgi</groupId>
 	    <artifactId>java-utils</artifactId>
-	    <version><VERSION></version>
+	    <version>VERSION</version>
 	</dependency>
 </dependencies>
 ```
@@ -76,7 +76,7 @@ BigDecimal bigQuotient(BigDecimal dividend, BigDecimal... divisors);
 ```
 Example :
 ```java
-int sum = AdvMath.sum(5,7,0,9,8,5,-7,0);
+int sum = AdvMath.sum(5, 7, 0, 9, 8, 5, -7, 0);
 ```
 There are many other functions - just try it out !
 
@@ -198,9 +198,11 @@ AdvImage.takeScrenshots(File path, int amount, int delay);
 AdvImage.takeScrenshots(File path, int amount, int delay, boolean inNewThread);
 ```
 Important : the input file needs to be a directory !
+
 ---
 
 ### Run something parallel :
 ```java
 ParallelTask.runParallel(Runnable runnable, CommandCallback callback);
 ```
+This creates a new thread and starts it.
