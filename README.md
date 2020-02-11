@@ -176,11 +176,10 @@ Take a screenshot (PNG):
 ```
 AdvImage.takeScreenshot(File nameOfTheScreenshot);
 ```
-By the way : it returns a File object !
 ```java
 File file = new File("C:\\Users\\Public\\Desktop\\screenshot.png");
 System.out.println(file.exists());
-file = AdvImage.takeScreenshot(file);
+AdvImage.takeScreenshot(file);
 System.out.println(file.exists());
 ```
 Output :
@@ -192,6 +191,8 @@ You like JPEG ?
 ```
 AdvImage.takeJPEGScreenshot(File nameOfTheScreenshot);
 ```
+By the way : it returns a File object ! (normally not important)
+
 You want to take multiple screenshots ?
 ```
 AdvImage.takeScrenshots(File path, int amount, int delay);
