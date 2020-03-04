@@ -13,21 +13,21 @@ public class MultiThreads {
     }
 
     public static void startThreads() {
-        for (int i = 0; i < list.size(); i++) {
-            list.get(i).start();
+        for (Thread thread : list) {
+            thread.start();
         }
     }
 
     @Deprecated
     public static void stopThreads() {
-        for (int i = 0; i < list.size(); i++) {
-            list.get(i).stop();
+        for (Thread thread : list) {
+            thread.stop();
         }
     }
 
     public static void interruptThreads() {
-        for (int i = 0; i < list.size(); i++) {
-            list.get(i).interrupt();
+        for (Thread thread : list) {
+            thread.interrupt();
         }
     }
 
