@@ -1,4 +1,5 @@
 
+
 # JavaUtils
 
 [![](https://jitpack.io/v/alexsgi/java-utils.svg)](https://jitpack.io/#alexsgi/java-utils)
@@ -207,3 +208,38 @@ Important : the input file needs to be a directory !
 ParallelTask.runParallel(Runnable runnable, CommandCallback callback);
 ```
 This creates a new thread and starts it.
+
+---
+
+**Create many threads with the same runnable** :
+```java
+MultiThreads.createThreads(Runnable runnable, int amountOfThreads);
+```
+Start all those Threads :
+```java
+MultiThreads.startThreads();
+```
+Interrupt all Threads :
+```java
+MultiThreads.interruptThreads();
+```
+Clear all Threads :
+```java
+MultiThreads.clearThreads();
+```
+Get current amount of Threads :
+```java
+int amount = MultiThreads.getThreadAmount();
+```
+---
+Some tools for Strings :
+
+Check if a String contains **at least one** of the params :
+```java
+StringUtils.containsOneOf(String src, String... params);
+```
+Check if a String contains **all** of the params :
+```java
+StringUtils.containsAll(String src, String... params)
+```
+---
