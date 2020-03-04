@@ -7,7 +7,7 @@ public class MultiThreads {
     private static ArrayList<Thread> list = new ArrayList<>();
 
     public static void createThreads(Runnable runnable, int amount) {
-        list = new ArrayList<>();
+        clearThreads();
         for (int i = 0; i < amount; i++) {
             list.add(new Thread(runnable));
         }
