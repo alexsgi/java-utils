@@ -5,16 +5,12 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 
 /**
  * @author Alexander Sagorski
  * @since 2.2
  */
-public class AdvImage {
-
-    private static int counter = 0;
-    private static ArrayList<File> list = new ArrayList<>();
+public class Screentools {
 
     private static String PNG_SUFFIX = "png";
     private static String JPEG_SUFFIX = "jpeg";

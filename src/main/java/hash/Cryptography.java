@@ -56,6 +56,32 @@ public class Cryptography {
         return hexString.toString();
     }
 
+    public static String convertStringToHex(String s) {
+        if (s.length() == 0)
+            return "";
+        char c;
+        StringBuffer buff = new StringBuffer();
+        for (int i = 0; i < s.length(); i++) {
+            c = s.charAt(i);
+            buff.append(Integer.toHexString(c) + " ");
+        }
+        return buff.toString().trim();
+    }
+
+    public static String convertHexToString(String s) {
+        if (s.length() == 0)
+            return "";
+        String[] arr = s.split(" ");
+        StringBuffer buff = new StringBuffer();
+        int i;
+        for (String str : arr) {
+            i = Integer.valueOf(str, 16).intValue();
+            String hs = new Character((char) i).toString();
+            buff.append(hs);
+        }
+        return buff.toString();
+    }
+
     public static int getHashLength() {
         return HASH_LENGTH;
     }

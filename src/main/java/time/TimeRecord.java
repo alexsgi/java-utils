@@ -3,9 +3,11 @@ package time;
 public class TimeRecord {
 
     private long start, end;
+    private String description;
 
-    public void start() {
+    public TimeRecord start() {
         start = System.currentTimeMillis();
+        return this;
     }
 
     public int stop() {
@@ -23,6 +25,15 @@ public class TimeRecord {
 
     public int getEnd() {
         return (int) end;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public TimeRecord setDescription(String description) {
+        this.description = description;
+        return this;
     }
 
 }
