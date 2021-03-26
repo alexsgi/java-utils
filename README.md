@@ -62,26 +62,7 @@ FutureTaskExecutor.runDelayed(Runnable runnable, int delayInMilliSeconds, boolea
 
 ---
 
-###  Mathematical functions :
-Standard:
-```java
-double sum(double... summands);
-double difference(double minuend, double... subtrahents);
-double product(double... factors);
-double quotient(double dividend, double... divisors);
 
-BigDecimal bigSum(BigDecimal... summands);
-BigDecimal bigDifference(BigDecimal minuend, BigDecimal... subtrahents);
-BigDecimal bigProduct(BigDecimal... factors);
-BigDecimal bigQuotient(BigDecimal dividend, BigDecimal... divisors);
-```
-Example :
-```java
-int sum = AdvMath.sum(5, 7, 0, 9, 8, 5, -7, 0);
-```
-There are many other functions - just try it out !
-
----
 ### Cryptography :
 SHA2-512:
 ```java
