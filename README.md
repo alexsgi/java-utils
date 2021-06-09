@@ -205,7 +205,7 @@ Notice: the input file needs to be a directory
 **Create many threads with the same runnable** :
 
 ```java
-MultiThreads.createThreads(Runnable runnable,int amountOfThreads);
+MultiThreads.createThreads(Runnable runnable, int amountOfThreads);
 ```
 
 Start all threads :
@@ -238,11 +238,11 @@ Some tools for Strings :
 Check if a String contains **at least one** of the params :
 
 ```java
-StringUtils.containsOneOf(String src, String...params);
+StringUtils.containsOneOf(String src, String... params);
 ```
 
 Check if a String contains **all** of the params :
 
 ```java
-StringUtils.containsAll(String src, String...params)
+StringUtils.containsAll(String src, String... params)
 ```
