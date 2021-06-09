@@ -1,4 +1,4 @@
-package system;
+package com.alexsgi.system;
 
 /**
  * @author Alexander Sagorski

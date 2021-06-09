@@ -1,4 +1,4 @@
-package io;
+package com.alexsgi.io;
 
 /**
  * @author Alexander Sagorski

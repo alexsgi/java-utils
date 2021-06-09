@@ -1,4 +1,4 @@
-package time;
+package com.alexsgi.time;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -9,6 +9,10 @@ import java.util.TimerTask;
  */
 public class FutureTaskExecutor {
 
+    /**
+     * @param runnable runnable to execute after delay
+     * @param delay    com.alexsgi.time to wait
+     */
     public static void runDelayed(Runnable runnable, int delay) {
         if (runnable == null) return;
         Timer timer = new Timer(false);
@@ -17,7 +21,7 @@ public class FutureTaskExecutor {
 
     /**
      * @param runnable     runnable to execute after delay
-     * @param delay        time to wait
+     * @param delay        com.alexsgi.time to wait
      * @param isTerminable false: main stops timer (if necessary); true: timer finishes properly (as well if main already finished)
      */
     public static void runDelayed(Runnable runnable, int delay, boolean isTerminable) {

@@ -1,4 +1,4 @@
-package lang;
+package com.alexsgi.lang;
 
 public class StringUtils {
 

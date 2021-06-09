@@ -1,4 +1,4 @@
-package hash;
+package com.alexsgi.hash;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -23,8 +23,8 @@ public class Cryptography {
     public static String hashSHA2(String input) {
         try {
             MessageDigest digest = MessageDigest.getInstance(SHA_256);
-            byte[] encodedhash = digest.digest(input.getBytes(StandardCharsets.UTF_8));
-            return bytesToHex(encodedhash);
+            byte[] encodedHash = digest.digest(input.getBytes(StandardCharsets.UTF_8));
+            return bytesToHex(encodedHash);
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
@@ -34,8 +34,8 @@ public class Cryptography {
     public static String hashSHA3(String input) {
         try {
             MessageDigest digest = MessageDigest.getInstance(SHA3_256);
-            byte[] encodedhash = digest.digest(input.getBytes(StandardCharsets.UTF_8));
-            return bytesToHex(encodedhash);
+            byte[] encodedHash = digest.digest(input.getBytes(StandardCharsets.UTF_8));
+            return bytesToHex(encodedHash);
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
