@@ -10,15 +10,15 @@ JavaUtils is a small library to ease programming with Java.
 
 ```gradle
 allprojects {
-	repositories {
-		maven { url 'https://jitpack.io' }
-	}
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
 }
 ```
 
 ```gradle
 dependencies {
-	implementation 'com.github.alexsgi:java-utils:VERSION'
+    implementation 'com.github.alexsgi:java-utils:VERSION'
 }
 ```
 
@@ -26,20 +26,20 @@ dependencies {
 
 ```maven
 <repositories>
-	<repository>
-		<id>jitpack.io</id>
-		<url>https://jitpack.io</url>
-	</repository>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
 </repositories>
 ```
 
 ```maven
 <dependencies>
-	<dependency>
-	    <groupId>com.github.alexsgi</groupId>
-	    <artifactId>java-utils</artifactId>
-	    <version>VERSION</version>
-	</dependency>
+    <dependency>
+        <groupId>com.github.alexsgi</groupId>
+        <artifactId>java-utils</artifactId>
+        <version>VERSION</version>
+    </dependency>
 </dependencies>
 ```
 
