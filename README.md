@@ -1,6 +1,8 @@
 # JavaUtils
 ![CI](https://github.com/alexsgi/java-utils/actions/workflows/maven.yml/badge.svg)
 [![](https://jitpack.io/v/alexsgi/java-utils.svg)](https://jitpack.io/#alexsgi/java-utils)
+[![GitHub Release](https://img.shields.io/github/release/alexsgi/java-utils.svg?style=flat)]()
+
 
 JavaUtils is a small library to ease programming with Java.
 
