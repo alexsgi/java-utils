@@ -1,6 +1,5 @@
 # JavaUtils
 ![CI](https://github.com/alexsgi/java-utils/actions/workflows/maven.yml/badge.svg)
-[![](https://jitpack.io/v/alexsgi/java-utils.svg)](https://jitpack.io/#alexsgi/java-utils)
 [![GitHub Release](https://img.shields.io/github/release/alexsgi/java-utils.svg?style=flat)]()
 
 
@@ -8,42 +7,7 @@ JavaUtils is a small library to ease programming with Java.
 
 ## 1. Import
 
-**Gradle:**
-
-```gradle
-allprojects {
-    repositories {
-        maven { url 'https://jitpack.io' }
-    }
-}
-```
-
-```gradle
-dependencies {
-    implementation 'com.github.alexsgi:java-utils:VERSION'
-}
-```
-
-**Maven:**
-
-```maven
-<repositories>
-    <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
-    </repository>
-</repositories>
-```
-
-```maven
-<dependencies>
-    <dependency>
-        <groupId>com.github.alexsgi</groupId>
-        <artifactId>java-utils</artifactId>
-        <version>VERSION</version>
-    </dependency>
-</dependencies>
-```
+Library was uploaded via GitHub. Newest version and instructions are [here](https://github.com/alexsgi/java-utils/packages/).
 
 ## 2. Features
 
