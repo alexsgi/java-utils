@@ -23,5 +23,4 @@
             <url>https://maven.pkg.github.com/alexsgi/java-utils</url>
         </repository>
     </distributionManagement>
-
 </project>
